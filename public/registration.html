@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  </head>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="Images/bg2.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Welcome to <br> Haath Batayen</span>
+          <span class="text-2">Here you can sell/buy Services</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="Images/bg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="forms">
+      <p id="wrong"> </p>
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="/public/registration.html" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="inp1" placeholder="Enter your email" name="e" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="inp2" placeholder="Enter your password" name="p" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+               <!-- <input type="submit" value="Submit"> -->
+               <button type="submit"  style=" color: #fff;
+               background: #1A132F;
+               border-radius: 6px;
+               padding: 0;
+               height: 100%;
+  width: 100%;border: none;
+               cursor: pointer;
+               transition: all 0.4s ease;
+               ">Login</button>
+              </div>
+              <div class="text sign-up-text">Don't have an account? <a href="signup.html">Signup now</a></div>
+            </div>
+            
+        </form>
+      </div>
+
+      <!-- ---------------------------------------------------- -->
+      <script>
+        function myFunction() {
+          document.getElementById("wrong").innerHTML = "<span style='color: red;'>Wrong Email or Password!</span>" ;
+        }
+        
+        if(window.performance.navigation.type==0){
+          myFunction();
+        }
+        </script>
+
+</body>
+</html>
